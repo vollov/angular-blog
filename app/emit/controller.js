@@ -1,13 +1,16 @@
 'use strict';
 
-angular.module('myApp.emit', [ 'ngRoute' ])
+angular.module('myApp.emit', [ 'ui.router' ])
 
-.config(['$routeProvider', function($routeProvider) {
-	$routeProvider.when('/emit', {
-		templateUrl : 'emit/view.html',
-		controller : 'MessageController'
+.config([ '$stateProvider', '$urlRouterProvider', '$locationProvider', 
+  function($stateProvider,   $urlRouterProvider,   $locationProvider) {
+	
+	$stateProvider.state('emit',{
+		url: '/emit',
+		controller:'MessageController',
+		templateUrl:'/emit/view.html'
 	});
-} ])
+}])
 
 .controller('MessageController', [ '$scope', '$timeout',function($scope, $timeout) {
 	$scope.messages = [{

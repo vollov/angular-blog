@@ -1,13 +1,16 @@
 'use strict';
 
-angular.module('myApp.event', [ 'ngRoute' ])
+angular.module('myApp.event', [ 'ui.router' ])
 
-.config(['$routeProvider', function($routeProvider) {
-	$routeProvider.when('/event', {
-		templateUrl : 'event/view.html',
-		controller : 'SiteController'
+.config([ '$stateProvider', '$urlRouterProvider', '$locationProvider', 
+  function($stateProvider,   $urlRouterProvider,   $locationProvider) {
+	
+	$stateProvider.state('event',{
+		url: '/event',
+		controller:'SiteController',
+		templateUrl:'/event/view.html'
 	});
-} ])
+}])
 
 .controller('SiteController', [ '$scope', function($scope) {
 	$scope.publisher='SitePoint';
