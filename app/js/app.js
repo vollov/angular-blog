@@ -1,8 +1,8 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [ 'ui.router', 'myApp.view1', 'myApp.view2', 'myApp.event', 'myApp.emit'
-// 'myApp.version','myApp.blog',
+angular.module('myApp', [ 'ui.router', 'myApp.blog', 'myApp.view1', 'myApp.view2', 'myApp.event', 'myApp.emit'
+
 ]).config([ '$stateProvider', '$urlRouterProvider', '$locationProvider', 
     function($stateProvider,   $urlRouterProvider,   $locationProvider) {
 	
