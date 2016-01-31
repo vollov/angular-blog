@@ -7,12 +7,14 @@ module.exports = function(config){
       'app/bower_components/angular/angular.js',
       'app/bower_components/angular-route/angular-route.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
-      'app/bower_components/angular-ui-router/angular-*.js',
+      'app/bower_components/angular-ui-router/release/angular-ui-router.js',
       'app/components/**/*.js',
       'app/view*/**/*.js',
       'app/modules/**/*.js',
       'app/js/*.js',
-      'test/**/*.js'
+      'app/view1/*.js',
+      'app/view2/*.js',
+      'test/unit/**/*.js'
     ],
 
     autoWatch : true,

@@ -1,7 +1,8 @@
 'use strict';
 
 describe('postService test\n', function() {
-	beforeEach(module('spBlogger.posts.services'));
+	beforeEach(module('myApp.blog.services'));
+	
 	it('postService should return 4 post objects',
 			inject(function(postService) {
 				expect(postService.getAll().length).toBe(4);
