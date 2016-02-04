@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('spBlogger.admin').config(
+angular.module('myApp.admin').config(
 		[ '$stateProvider', function($stateProvider) {
 			$stateProvider.state('admin', {
 				url : '/admin',

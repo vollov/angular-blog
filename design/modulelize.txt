@@ -20,3 +20,10 @@
 			/css
 			/img
 			commentModule.js -- Main comment module definition
+			
+================
+blog data
+1. title
+2. content
+3. tags
+4. keywords
