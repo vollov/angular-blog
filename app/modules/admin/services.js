@@ -16,7 +16,7 @@ angular.module('myApp.admin.services', ['ngResource'])
 											// to delete the post entry
 	}
 }]).value('API_ENDPOINT',
-		'http://localhost:3000/api/posts/:id'); // This
+		'http://localhost:8000/api/post/:id'); // This
 																		// is
 																		// our
 																		// end

@@ -1,10 +1,11 @@
 'use strict';
 
-angular.module('myApp.admin').config(
+angular.module('myApp.admin', ['ui.router', 'myApp.admin.services', 'myApp.admin.controllers'])
+.config(
 		[ '$stateProvider', function($stateProvider) {
 			$stateProvider.state('admin', {
 				url : '/admin',
-				abstract : true,
+				//abstract : true,
 				controller : 'AdminController',
 				templateUrl : 'modules/admin/views/admin-home.html'
 			}).state('admin.postNew', {
