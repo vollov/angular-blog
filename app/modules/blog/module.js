@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.blog', ['ui.router', 'myApp.blog.services', 'myApp.blog.controllers'])
+angular.module('myApp.blog', ['ui.router', 'ngCookies', 'myApp.admin.services', 'myApp.blog.controllers'])
 .config([ '$stateProvider', '$locationProvider', 
   function($stateProvider,   $locationProvider) {
 
