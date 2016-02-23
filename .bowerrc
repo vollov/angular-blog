@@ -1,0 +1,6 @@
+{
+  "directory": "app/bower_components/",
+  "analytics": false,
+  "proxy": "http://localhost:3128",
+  "https-proxy": "http://localhost:3128"
+}
